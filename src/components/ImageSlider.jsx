@@ -43,32 +43,35 @@ const ImageSlider = () => {
   return (
     <div className="flex items-center flex-col justify-center bg-black h-[600px] ">
       <div className="flex flex-col items-center gap-1">
-        <motion.h1 
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ y: 0, opacity: 1 }}
-             transition={{
-               delay: 0.2,
-               y: { type: "spring", stiffness: 60 },
-               opacity: { duration: 1 },
-               ease: "easeIn",
-               duration: 1,
-             }}
-        className="text-2xl text-[#eee]">how to get started</motion.h1>
-        <motion.p 
-             initial={{ y: 100, opacity: 0 }}
-             whileInView={{ y: 0, opacity: 1 }}
-             transition={{
-               delay: 0.4,
-               y: { type: "spring", stiffness: 60 },
-               opacity: { duration: 1 },
-               ease: "easeIn",
-               duration: 1,
-             }}
-        className="text-base text-gray-300">
-          Conventional design has been shown the door, <br /> the design you crave has
-          just made its appearance
+        <motion.h1
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          className="text-2xl text-[#eee]"
+        >
+          how to get started
+        </motion.h1>
+        <motion.p
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          className="text-base text-gray-300"
+        >
+          Conventional design has been shown the door, <br /> the design you
+          crave has just made its appearance
         </motion.p>
-         
       </div>
       {images.map((image, index) => (
         <motion.img
@@ -83,15 +86,15 @@ const ImageSlider = () => {
           style={{ width: "40%", position: "absolute" }}
         />
       ))}
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-row gap-3 w-full justify-center">
         <button
-          className="text-white mt-[400px] bg-purple-800 rounded-md py-2 px-4"
+          className="text-white mt-[400px] bg-purple-800 rounded-md py-2 h-[10%] px-4 w-[70%] md:w-[50%] lg:w-[10%] flex justify-center items-center"
           onClick={handleBack}
         >
           <FaArrowLeft />
         </button>
         <button
-          className="text-white mt-[400px] bg-purple-800 rounded-md py-2 px-4"
+          className="text-white mt-[400px] bg-purple-800 rounded-md py-2 h-[10%] px-4 w-[70%] md:w-[50%]  lg:w-[10%] flex justify-center items-center"
           onClick={handleNext}
         >
           <FaArrowRight />

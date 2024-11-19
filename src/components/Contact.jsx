@@ -11,7 +11,7 @@ import GetInTouch from "./GetInTouch";
 export default function Contact() {
   const [contact, setContact] = useState(false);
   return (
-    <div className="text-white py-10 px-8 w-full h-auto flex flex-col">
+    <section id="contact" className="text-white py-10 px-1 md:px-3 lg:px-8 w-full h-auto flex flex-col">
       <div className="flex justify-center w-full">
         {!contact ? (
           <div className="flex flex-col w-full h-auto justify-center items-center gap-4">
@@ -100,6 +100,6 @@ export default function Contact() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }

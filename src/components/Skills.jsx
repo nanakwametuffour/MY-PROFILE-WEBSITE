@@ -4,7 +4,7 @@ import { skills } from '../assets/caruselData';
 
 export default function Skills() {
   return (
-    <div className="text-purple-300 w-full h-auto py-10 px-1 md:px-5 lg:px-10 border-b border-purple-300">
+    <section id='skills' className="text-purple-300 w-full h-auto py-10 px-1 md:px-5 lg:px-10 border-b border-purple-300">
       <div className="flex flex-col w-full h-auto">
         <div className="flex flex-col w-full gap-5">
           <div className="flex items-center gap-5 text-2xl">
@@ -99,6 +99,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

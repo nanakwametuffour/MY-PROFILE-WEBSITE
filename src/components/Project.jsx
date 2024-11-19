@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ImSpinner9 } from "react-icons/im";
 import { FaDiagramProject } from "react-icons/fa6";
 import { projects } from "../assets/caruselData";
+import { Link } from "react-router-dom";
+
 export default function Project() {
  
   const [showAll, setShowAll] = useState(4);
@@ -13,7 +15,7 @@ export default function Project() {
     setShowAll(showAll + showAll);
   };
   return (
-    <div className="text-white py-10 w-full h-auto px-1 md:px-2 lg:px-5 border-b border-purple-400">
+    <section id="projects" className="text-white py-10 w-full h-auto px-1 md:px-2 lg:px-5 border-b border-purple-400">
       <div className="flex flex-col w-full h-auto py-5 gap-5">
         <div className="flex justify-between items-center px-1 md:px-2 lg:px-4">
           <div className="flex items-center gap-2 text-2xl ">
@@ -64,6 +66,6 @@ export default function Project() {
           Purchase my services
         </button>
       </a>
-    </div>
+    </section>
   );
 }

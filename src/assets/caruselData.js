@@ -87,7 +87,7 @@ export const workData = [
   },
   {
     id: 4,
-    name: "ui uix design",
+    name: "ui ux design",
     img: "/images/georgetreger-github-io-TheMeal-2024.png",
     des: "Speed up your product development process with revolutionary Merge technology. From UI designing to UI developing – create consistent interfaces using the same building blocks with me.",
     link: "https://georgetreger.github.io/TheMeal/",

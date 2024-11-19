@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background: rgba(0, 0, 0);
+  font-family: sans-serif;
+  
+}
+
+.header{
+      backdrop-filter: blur(5px);
+    background-color: #0f0f0fcc;
+    border-radius: 60px;
+    width: 100%;
+    transform: none;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+}
+.bg{
+  background: url('/public/framer1.avif');
+  background-position: center;
+  background-size: cover;
+ background-color: rgba(0, 0, 0);
+
+}
+
+.text{
+  text-shadow: purple;
+}
+
+.na:hover{
+   background-color: #333333;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1); 
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+}
+
+
+
+.img{
+  transition: all 10s ease;
+}
+
+.p:hover .img{
+  transform: translateY(-80%);
+}
